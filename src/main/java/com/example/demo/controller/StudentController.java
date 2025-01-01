@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,11 +29,16 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/student")
 public class StudentController {
 
+	Logger logger=LoggerFactory.getLogger(StudentController.class);
+	
 	@Autowired
 	StudentService studentService;
 
 	@GetMapping("/getAll")
 	public List<StudentResponse> getAllStudent() {
+		
+		logger.error("Inside error");
+						
 		List<Student> studentList = studentService.getAllStudents();
 
 		List<StudentResponse> studentResponseList = new ArrayList<>(); // its a DTO
@@ -47,6 +54,7 @@ public class StudentController {
 	@PostMapping("/create")
 	public StudentResponse createStudent(@Valid @RequestBody CreateStudentRequest createStudentRequest) {
 		Student student = studentService.createStudent(createStudentRequest);
+		logger.info("Created New Student");
 		return new StudentResponse(student);
 	}
 
@@ -182,8 +190,10 @@ public class StudentController {
 	@GetMapping("/getByCity/{city}")
 	public List<StudentResponse> getByCity(@PathVariable String city) {
 		
+		// 1. Get list of all students who live in the same city
 		List<Student> studentList = studentService.getByCity(city);
 		
+		// 2. Convert list of Students to list of StudentResponse
 		List<StudentResponse> studentResponseList = new ArrayList<StudentResponse>();
 		
 		studentList.stream().forEach(student -> {

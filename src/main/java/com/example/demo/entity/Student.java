@@ -1,14 +1,17 @@
 package com.example.demo.entity;
 
+
 import java.util.List;
 
 import com.example.demo.request.CreateStudentRequest;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Index;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
@@ -21,7 +24,10 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-@Table(name = "student")
+@Table(name = "student",indexes= {
+		@Index(name="idx_first_Name",columnList="first_name"),
+		@Index(name="idx_last_Name",columnList="last_name")
+})
 public class Student {
 
 	@Id
@@ -41,18 +47,18 @@ public class Student {
 	@Transient
 	private String fullName;
 	
-	@OneToOne
-	@JoinColumn(name = "address_id")
+	@OneToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="address_id")
 	private Address address;
 	
-	@OneToMany(mappedBy = "student")
+	@OneToMany(mappedBy="student")
 	private List<Subject> learningSubjects;
-	
 	public Student(CreateStudentRequest createStudentRequest) {
 		this.firstName = createStudentRequest.getFirstName();
 		this.lastName = createStudentRequest.getLastName();
 		this.email = createStudentRequest.getEmail();
 		this.fullName= createStudentRequest.getFirstName()+" "
 		+createStudentRequest.getLastName();
+		
 	}
 }
