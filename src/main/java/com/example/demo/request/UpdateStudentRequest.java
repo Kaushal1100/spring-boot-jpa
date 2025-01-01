@@ -1,5 +1,7 @@
 package com.example.demo.request;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.validation.constraints.NotNull;
@@ -17,5 +19,6 @@ public class UpdateStudentRequest {
 	private String firstName;
 	private String lastName;
 	private String email;
+	
 
 }

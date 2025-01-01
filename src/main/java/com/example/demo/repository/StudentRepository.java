@@ -38,9 +38,14 @@ public interface StudentRepository extends JpaRepository<Student, Long>{
 	@Query("Delete From Student where firstName = :firstName")
 	Integer deleteByFirstName (String firstName);
 	
-	List<Student> findByAddressCity (String city);
+	List<Student> findByAddressCity(String city);
 	
-	@Query("From Student where address.city = :city")
-	List<Student> getByAddressCity (String city);
+	//1. Student is entity class
+	//2. address is object of entity class
+	//3. city is the field inside the address entity class
+	//4. Important: We aren't referring to any column from DB in JPQL
+	@Query("FROM Student WHERE address.city = :city")
+	List<Student> getByAddressCity(String city);
+
 
 }

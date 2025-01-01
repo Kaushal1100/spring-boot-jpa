@@ -16,21 +16,19 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "subject")
-public class Subject {
-
+@Table(name="subject")
+public class Subject{
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "subject_name")
+	@Column(name="subject_name")
 	private String subjectName;
 	
-	@Column(name = "marks_obtained")
+	@Column(name="marks_obtained")
 	private Double marksObtained;
 	
 	@ManyToOne
-	@JoinColumn(name = "student_id")
+	@JoinColumn(name="student_id")
 	private Student student;
 }
