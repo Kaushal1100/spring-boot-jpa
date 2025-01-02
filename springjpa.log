@@ -1,0 +1,341 @@
+2025-01-01T12:40:26.639-05:00  INFO 5308 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 5308 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:40:26.644-05:00  INFO 5308 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:40:27.647-05:00  INFO 5308 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:40:27.736-05:00  INFO 5308 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:40:29.185-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:40:29.213-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:40:29.213-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:40:29.330-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:40:29.331-05:00  INFO 5308 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2572 ms
+2025-01-01T12:40:29.620-05:00  INFO 5308 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:40:29.626-05:00  WARN 5308 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:40:29.863-05:00  INFO 5308 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77324a58
+2025-01-01T12:40:29.866-05:00  INFO 5308 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:40:29.931-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:40:30.069-05:00  INFO 5308 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:40:30.148-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:40:30.886-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:40:32.521-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:40:32.524-05:00  INFO 5308 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:40:33.218-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:40:33.865-05:00  WARN 5308 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:40:34.609-05:00  INFO 5308 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:40:34.620-05:00  INFO 5308 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 8.816 seconds (process running for 9.856)
+2025-01-01T12:40:48.347-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T12:40:48.348-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T12:40:48.349-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-01T12:40:48.489-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Howard])
+2025-01-01T12:40:48.489-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:40:48.489-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Howard])
+2025-01-01T12:40:48.688-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : Student ResponseList= [com.example.demo.response.StudentResponse@43e32480, com.example.demo.response.StudentResponse@14e84094, com.example.demo.response.StudentResponse@4608f599, com.example.demo.response.StudentResponse@7422a1cf]
+2025-01-01T12:40:48.689-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Howard])
+2025-01-01T12:40:48.689-05:00  INFO 5308 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Response= [com.example.demo.response.StudentResponse@43e32480, com.example.demo.response.StudentResponse@14e84094, com.example.demo.response.StudentResponse@4608f599, com.example.demo.response.StudentResponse@7422a1cf]
+2025-01-01T12:41:30.310-05:00  INFO 5308 --- [spring-boot-jpa] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-01T12:41:30.682-05:00  INFO 5308 --- [spring-boot-jpa] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:41:30.685-05:00  INFO 5308 --- [spring-boot-jpa] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-01T12:41:30.696-05:00  INFO 5308 --- [spring-boot-jpa] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-01T12:41:45.943-05:00  INFO 8680 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 8680 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:41:45.949-05:00  INFO 8680 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:41:46.944-05:00  INFO 8680 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:41:47.049-05:00  INFO 8680 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:41:48.147-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:41:48.167-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:41:48.168-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:41:48.254-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:41:48.257-05:00  INFO 8680 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2226 ms
+2025-01-01T12:41:48.534-05:00  INFO 8680 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:41:48.546-05:00  WARN 8680 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:41:48.802-05:00  INFO 8680 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d99ee1b
+2025-01-01T12:41:48.808-05:00  INFO 8680 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:41:48.868-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:41:48.964-05:00  INFO 8680 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:41:49.032-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:41:49.429-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:41:51.156-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:41:51.165-05:00  INFO 8680 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:41:52.223-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:41:53.160-05:00  WARN 8680 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:41:54.195-05:00  INFO 8680 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:41:54.212-05:00  INFO 8680 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 9.048 seconds (process running for 10.599)
+2025-01-01T12:42:15.587-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T12:42:15.588-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T12:42:15.591-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-01-01T12:42:15.848-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[James])
+2025-01-01T12:42:15.849-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:43:05.064-05:00  INFO 8680 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[James])
+2025-01-01T12:44:02.386-05:00  INFO 8680 --- [spring-boot-jpa] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-01T12:44:07.768-05:00  WARN 8680 --- [spring-boot-jpa] [RMI TCP Connection(12)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : The executor associated with thread pool [http-nio-8082] has not fully shutdown. Some application threads may still be running.
+2025-01-01T12:44:07.781-05:00  INFO 8680 --- [spring-boot-jpa] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:44:07.787-05:00  INFO 8680 --- [spring-boot-jpa] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-01T12:44:07.809-05:00  INFO 8680 --- [spring-boot-jpa] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-01T12:44:17.731-05:00  INFO 22648 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 22648 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:44:17.735-05:00  INFO 22648 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:44:18.898-05:00  INFO 22648 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:44:19.001-05:00  INFO 22648 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:44:20.370-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:44:20.400-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:44:20.401-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:44:20.507-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:44:20.508-05:00  INFO 22648 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2624 ms
+2025-01-01T12:44:20.822-05:00  INFO 22648 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:44:20.836-05:00  WARN 22648 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:44:21.101-05:00  INFO 22648 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49b89425
+2025-01-01T12:44:21.105-05:00  INFO 22648 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:44:21.165-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:44:21.270-05:00  INFO 22648 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:44:21.344-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:44:21.799-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:44:23.618-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:44:23.626-05:00  INFO 22648 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:44:24.564-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:44:25.612-05:00  WARN 22648 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:44:27.248-05:00  INFO 22648 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:44:27.261-05:00  INFO 22648 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 10.266 seconds (process running for 11.59)
+2025-01-01T12:44:31.943-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T12:44:31.944-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T12:44:31.946-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-01T12:44:32.217-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[James])
+2025-01-01T12:44:32.218-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:44:36.236-05:00  INFO 22648 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[James])
+2025-01-01T12:45:56.286-05:00  INFO 8504 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 8504 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:45:56.291-05:00  INFO 8504 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:45:57.208-05:00  INFO 8504 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:45:57.315-05:00  INFO 8504 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:45:58.554-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:45:58.571-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:45:58.573-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:45:58.669-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:45:58.670-05:00  INFO 8504 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2300 ms
+2025-01-01T12:45:58.968-05:00  INFO 8504 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:45:58.985-05:00  WARN 8504 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:45:59.252-05:00  INFO 8504 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@164d01ba
+2025-01-01T12:45:59.256-05:00  INFO 8504 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:45:59.309-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:45:59.394-05:00  INFO 8504 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:45:59.460-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:45:59.846-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:46:01.570-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:46:01.578-05:00  INFO 8504 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:46:02.532-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:46:03.304-05:00  WARN 8504 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:46:04.295-05:00  INFO 8504 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:46:04.316-05:00  INFO 8504 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 8.736 seconds (process running for 9.998)
+2025-01-01T12:46:25.833-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T12:46:25.833-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T12:46:25.835-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-01T12:46:26.025-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:46:26.026-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:46:33.485-05:00  INFO 8504 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:48:55.679-05:00  INFO 3976 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 3976 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:48:55.684-05:00  INFO 3976 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:48:56.553-05:00  INFO 3976 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:48:56.672-05:00  INFO 3976 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:48:57.751-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:48:57.772-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:48:57.773-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:48:57.867-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:48:57.868-05:00  INFO 3976 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2120 ms
+2025-01-01T12:48:58.108-05:00  INFO 3976 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:48:58.115-05:00  WARN 3976 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:48:58.331-05:00  INFO 3976 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5864e8bf
+2025-01-01T12:48:58.335-05:00  INFO 3976 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:48:58.383-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:48:58.457-05:00  INFO 3976 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:48:58.507-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:48:58.817-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:49:00.362-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:49:00.365-05:00  INFO 3976 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:49:01.201-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:49:01.935-05:00  WARN 3976 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:49:02.873-05:00  INFO 3976 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:49:02.886-05:00  INFO 3976 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 7.847 seconds (process running for 8.981)
+2025-01-01T12:49:07.660-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T12:49:07.660-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T12:49:07.663-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-01-01T12:49:07.900-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:49:07.900-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:49:07.901-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:49:08.184-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T12:49:08.184-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:49:08.185-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Response= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T12:50:42.687-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:50:42.687-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T12:50:42.687-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:50:42.697-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T12:50:42.697-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T12:50:42.698-05:00  INFO 3976 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Response= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T12:51:09.486-05:00  INFO 3976 --- [spring-boot-jpa] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-01T12:51:09.835-05:00  INFO 3976 --- [spring-boot-jpa] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:51:09.838-05:00  INFO 3976 --- [spring-boot-jpa] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-01T12:51:09.851-05:00  INFO 3976 --- [spring-boot-jpa] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-01T12:51:13.466-05:00  INFO 13736 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 13736 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:51:13.468-05:00  INFO 13736 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:51:14.453-05:00  INFO 13736 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:51:14.553-05:00  INFO 13736 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:51:15.776-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:51:15.798-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:51:15.798-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:51:15.906-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:51:15.907-05:00  INFO 13736 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2355 ms
+2025-01-01T12:51:16.201-05:00  INFO 13736 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:51:16.208-05:00  WARN 13736 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:51:16.486-05:00  INFO 13736 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49b89425
+2025-01-01T12:51:16.488-05:00  INFO 13736 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:51:16.555-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:51:16.671-05:00  INFO 13736 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:51:16.744-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:51:17.128-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:51:18.697-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:51:18.701-05:00  INFO 13736 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:51:19.574-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:51:20.441-05:00  WARN 13736 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:51:21.431-05:00  INFO 13736 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:51:21.445-05:00  INFO 13736 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 8.693 seconds (process running for 10.032)
+2025-01-01T12:53:23.955-05:00  INFO 13736 --- [spring-boot-jpa] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-01T12:53:24.354-05:00  INFO 13736 --- [spring-boot-jpa] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:53:24.360-05:00  INFO 13736 --- [spring-boot-jpa] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-01T12:53:24.380-05:00  INFO 13736 --- [spring-boot-jpa] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-01T12:53:27.754-05:00  INFO 10544 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 10544 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T12:53:27.763-05:00  INFO 10544 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T12:53:28.837-05:00  INFO 10544 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T12:53:28.950-05:00  INFO 10544 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+2025-01-01T12:53:30.093-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T12:53:30.121-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T12:53:30.122-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T12:53:30.234-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T12:53:30.234-05:00  INFO 10544 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2386 ms
+2025-01-01T12:53:30.489-05:00  INFO 10544 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T12:53:30.503-05:00  WARN 10544 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T12:53:30.781-05:00  INFO 10544 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24197b13
+2025-01-01T12:53:30.784-05:00  INFO 10544 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T12:53:30.845-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T12:53:30.965-05:00  INFO 10544 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T12:53:31.035-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T12:53:31.462-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T12:53:33.217-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T12:53:33.225-05:00  INFO 10544 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T12:53:33.959-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T12:53:34.740-05:00  WARN 10544 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T12:53:35.476-05:00  INFO 10544 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T12:53:35.491-05:00  INFO 10544 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 8.393 seconds (process running for 9.717)
+2025-01-01T13:14:59.551-05:00  INFO 10544 --- [spring-boot-jpa] [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-01-01T13:14:59.904-05:00  INFO 10544 --- [spring-boot-jpa] [RMI TCP Connection(32)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T13:14:59.907-05:00  INFO 10544 --- [spring-boot-jpa] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-01T13:14:59.930-05:00  INFO 10544 --- [spring-boot-jpa] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-01T13:15:03.195-05:00  INFO 21400 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 21400 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T13:15:03.199-05:00  INFO 21400 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T13:15:04.240-05:00  INFO 21400 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T13:15:04.360-05:00  INFO 21400 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2025-01-01T13:15:05.517-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T13:15:05.539-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T13:15:05.539-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T13:15:05.637-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T13:15:05.638-05:00  INFO 21400 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2362 ms
+2025-01-01T13:15:05.892-05:00  INFO 21400 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T13:15:05.902-05:00  WARN 21400 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T13:15:06.157-05:00  INFO 21400 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5002fde9
+2025-01-01T13:15:06.162-05:00  INFO 21400 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T13:15:06.217-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T13:15:06.296-05:00  INFO 21400 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T13:15:06.355-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T13:15:06.678-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T13:15:08.153-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T13:15:08.157-05:00  INFO 21400 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T13:15:08.730-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T13:15:09.443-05:00  WARN 21400 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T13:15:10.062-05:00  INFO 21400 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T13:15:10.072-05:00  INFO 21400 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 7.613 seconds (process running for 8.923)
+2025-01-01T13:15:30.040-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T13:15:30.040-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T13:15:30.042-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-01-01T13:16:37.723-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Inside Before Advice
+2025-01-01T13:17:25.815-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T13:17:53.879-05:00  INFO 21400 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T13:26:10.248-05:00  INFO 22712 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 22712 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T13:26:10.251-05:00  INFO 22712 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T13:26:11.196-05:00  INFO 22712 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T13:26:11.312-05:00  INFO 22712 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2025-01-01T13:26:12.335-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T13:26:12.355-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T13:26:12.355-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T13:26:12.434-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T13:26:12.434-05:00  INFO 22712 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2120 ms
+2025-01-01T13:26:12.662-05:00  INFO 22712 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T13:26:12.671-05:00  WARN 22712 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T13:26:12.915-05:00  INFO 22712 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59918c8f
+2025-01-01T13:26:12.920-05:00  INFO 22712 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T13:26:12.971-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T13:26:13.057-05:00  INFO 22712 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T13:26:13.124-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T13:26:13.481-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T13:26:15.217-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T13:26:15.224-05:00  INFO 22712 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T13:26:15.977-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T13:26:16.739-05:00  WARN 22712 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T13:26:17.504-05:00  INFO 22712 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T13:26:17.517-05:00  INFO 22712 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 7.922 seconds (process running for 9.169)
+2025-01-01T13:26:34.420-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T13:26:34.420-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T13:26:34.424-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-01T13:26:45.859-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T13:27:08.453-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T13:27:14.540-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-1] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T13:36:37.330-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick])
+2025-01-01T13:42:48.653-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick])
+2025-01-01T13:43:15.014-05:00  INFO 22712 --- [spring-boot-jpa] [http-nio-8082-exec-3] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
+2025-01-01T13:50:02.278-05:00 ERROR 22712 --- [spring-boot-jpa] [http-nio-8082-exec-5] c.e.demo.controller.StudentController    : Inside error
+2025-01-01T13:53:19.468-05:00  INFO 22508 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 22508 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T13:53:19.472-05:00  INFO 22508 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T13:53:20.372-05:00  INFO 22508 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T13:53:20.471-05:00  INFO 22508 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2025-01-01T13:53:21.441-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T13:53:21.458-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T13:53:21.458-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T13:53:21.544-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T13:53:21.546-05:00  INFO 22508 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2006 ms
+2025-01-01T13:53:21.791-05:00  INFO 22508 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T13:53:21.800-05:00  WARN 22508 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T13:53:22.046-05:00  INFO 22508 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59328218
+2025-01-01T13:53:22.049-05:00  INFO 22508 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T13:53:22.103-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T13:53:22.190-05:00  INFO 22508 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T13:53:22.259-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T13:53:22.605-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T13:53:24.037-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T13:53:24.040-05:00  INFO 22508 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T13:53:24.598-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T13:53:25.189-05:00  WARN 22508 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T13:53:25.908-05:00  INFO 22508 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T13:53:25.918-05:00  INFO 22508 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 7.065 seconds (process running for 8.503)
+2025-01-01T13:54:15.561-05:00  INFO 22508 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T13:54:15.562-05:00  INFO 22508 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T13:54:15.564-05:00  INFO 22508 --- [spring-boot-jpa] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-01T13:58:38.434-05:00  INFO 16800 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Starting SpringBootJpaApplication using Java 17.0.9 with PID 16800 (C:\Users\njoshi\git\spring-boot-jpa\target\classes started by njoshi in C:\Users\njoshi\git\spring-boot-jpa)
+2025-01-01T13:58:38.439-05:00  INFO 16800 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-01-01T13:58:39.353-05:00  INFO 16800 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T13:58:39.460-05:00  INFO 16800 --- [spring-boot-jpa] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
+2025-01-01T13:58:40.406-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-01-01T13:58:40.424-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-01T13:58:40.424-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-01T13:58:40.503-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-01T13:58:40.504-05:00  INFO 16800 --- [spring-boot-jpa] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
+2025-01-01T13:58:40.727-05:00  INFO 16800 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-01T13:58:40.735-05:00  WARN 16800 --- [spring-boot-jpa] [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-01-01T13:58:40.993-05:00  INFO 16800 --- [spring-boot-jpa] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a358613
+2025-01-01T13:58:40.997-05:00  INFO 16800 --- [spring-boot-jpa] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-01T13:58:41.050-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T13:58:41.144-05:00  INFO 16800 --- [spring-boot-jpa] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-01-01T13:58:41.207-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-01T13:58:41.565-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T13:58:42.886-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T13:58:42.891-05:00  INFO 16800 --- [spring-boot-jpa] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T13:58:43.423-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-01T13:58:43.981-05:00  WARN 16800 --- [spring-boot-jpa] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T13:58:44.586-05:00  INFO 16800 --- [spring-boot-jpa] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-01-01T13:58:44.599-05:00  INFO 16800 --- [spring-boot-jpa] [main] c.example.demo.SpringBootJpaApplication  : Started SpringBootJpaApplication in 6.838 seconds (process running for 8.058)
+2025-01-01T13:58:58.563-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T13:58:58.564-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T13:58:58.565-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-01T13:59:11.419-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.d.aop.AspectConfig$$SpringCGLIB$$0   : Request= InQueryRequest(firstNames=[Dominick, Bob])
+2025-01-01T13:59:15.861-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.demo.controller.StudentController    : inQueryRequest=InQueryRequest(firstNames=[Dominick, Bob])
+2025-01-01T13:59:20.396-05:00  INFO 16800 --- [spring-boot-jpa] [http-nio-8082-exec-2] c.e.demo.controller.StudentController    : Student ResponseList= [StudentResponse(id=5, firstName=Bob, lastName=Lee, email=bob.lee@example.com, street=780 Court Ave, city=WA, learningSubjects=[]), StudentResponse(id=13, firstName=Dominick, lastName=Rooney, email=DR10@gmail.com, street=142 chester, city=Manchester, learningSubjects=[])]
