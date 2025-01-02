@@ -116,6 +116,9 @@ public class StudentController {
 	
 	@GetMapping("getByFirstNameIn")
 	public List<StudentResponse> getByFirstNameIn(@RequestBody InQueryRequest inQueryRequest) {
+		
+		
+		logger.info("inQueryRequest="+inQueryRequest);
 		// 1. Get list of Students
 		List<Student> studentList = studentService.getByFirstNameIn(inQueryRequest);
 		
@@ -124,6 +127,8 @@ public class StudentController {
 		studentList.stream().forEach(student -> {
 			studentResponseList.add(new StudentResponse(student));
 		});
+		
+		logger.info("Student ResponseList= "+studentResponseList);
 		return studentResponseList;
 	}
 	@GetMapping("getAllWithPagination")
